@@ -1,0 +1,59 @@
+:root {
+  --color-bg: #ffffff;
+  --color-surface: #ffffff;
+  --color-surface-muted: #f4f7fa;
+  --color-border: #e2e8f0;
+
+  --color-text: #1f2937;
+  --color-text-muted: #64748b;
+  --color-text-soft: #94a3b8;
+
+  --color-primary: #4a6fa5;
+  --color-primary-dark: #395a87;
+  --color-primary-soft: #e7eef7;
+
+  --color-secondary: #2c4a5e;
+  --color-secondary-soft: #dce8ec;
+
+  --color-success: #2f9e5b;
+  --color-success-soft: #e1f5e9;
+  --color-warning: #b78a1e;
+  --color-warning-soft: #faf0da;
+  --color-danger: #c14a3f;
+  --color-danger-soft: #f8e6e4;
+  --color-info: #0e7490;
+  --color-info-soft: #e0f2f4;
+
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+
+  --shadow-sm: 0 1px 3px rgba(30, 41, 59, 0.06);
+  --shadow-md: 0 8px 24px rgba(30, 41, 59, 0.08);
+  --shadow-lg: 0 16px 40px rgba(30, 41, 59, 0.13);
+  --shadow-primary: 0 12px 28px -8px rgba(74, 111, 165, 0.42);
+
+  --gradient-primary: linear-gradient(135deg, #5b82b8 0%, #3f5f8f 100%);
+  --gradient-panel-fade: linear-gradient(180deg, rgba(255, 255, 255, 0) 55%, rgba(255, 255, 255, 0.95) 100%);
+
+  --font-heading: "Fraunces", "Georgia", serif;
+  --font-body: "Inter", "Segoe UI", sans-serif;
+
+  --header-height: 76px;
+
+  --admin-sidebar-bg: #f8fafc;
+  --admin-sidebar-bg-hover: #eef2f7;
+  --admin-sidebar-text: #51606f;
+  --admin-sidebar-text-active: #ffffff;
+  --admin-sidebar-border: #e2e8f0;
+  --admin-accent: #4a6fa5;
+}
+
+/*
+ * O site usa sempre o tema claro (branco + azul), mesmo se o sistema
+ * operacional/navegador do visitante estiver no modo escuro.
+ */
+:root {
+  color-scheme: light only;
+}

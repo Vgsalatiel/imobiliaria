@@ -1,0 +1,51 @@
+.corretores-page__layout {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 24px;
+  margin-top: 24px;
+  align-items: start;
+}
+
+.corretores-page__list,
+.corretores-page__form {
+  padding: 26px 28px;
+}
+
+.corretores-page__list-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.05rem;
+  margin-bottom: 18px;
+  color: var(--color-primary-dark);
+}
+
+.corretores-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.corretores-table th {
+  text-align: left;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--color-text-soft);
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.corretores-table td {
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.corretores-table tr:last-child td {
+  border-bottom: none;
+}
+
+@media (max-width: 860px) {
+  .corretores-page__layout {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,116 @@
+.visits-page__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.visits-page__tabs {
+  display: flex;
+  gap: 8px;
+  margin: 24px 0;
+  flex-wrap: wrap;
+}
+
+.visits-page__tabs button {
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  border-radius: 999px;
+  padding: 8px 18px;
+  font-weight: 600;
+  font-size: 0.86rem;
+  color: var(--color-text-muted);
+}
+
+.visits-page__tabs button.is-active {
+  background: var(--gradient-primary);
+  color: #ffffff;
+  border-color: transparent;
+}
+
+.visits-page__list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.visit-row {
+  display: flex;
+  gap: 18px;
+  padding: 18px 22px;
+  align-items: center;
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.visit-row:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.visit-row img {
+  width: 72px;
+  height: 72px;
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.visit-row__info {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.visit-row__info strong {
+  font-size: 1.02rem;
+  color: var(--color-text);
+}
+
+.visit-row__info span,
+.visit-row__info p {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.visit-row__info svg {
+  color: var(--color-text-soft);
+  flex-shrink: 0;
+}
+
+.visit-row__info p {
+  margin-top: 4px;
+  font-style: italic;
+}
+
+.visit-row__actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.visit-row__actions select {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 7px 8px;
+  background: var(--color-bg);
+}
+
+@media (max-width: 640px) {
+  .visit-row {
+    flex-wrap: wrap;
+  }
+
+  .visit-row__actions {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
